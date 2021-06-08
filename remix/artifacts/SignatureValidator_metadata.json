@@ -1,0 +1,94 @@
+{
+	"compiler": {
+		"version": "0.7.4+commit.3f05b770"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_signerAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "_hash",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_data",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_sig",
+						"type": "bytes"
+					}
+				],
+				"name": "isValidSignature",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "isValid",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Contains logic for signature validation. Signatures from wallet contracts assume ERC-1271 support (https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1271.md) Notes: Methods are strongly inspired by contracts in https://github.com/0xProject/0x-monorepo/blob/development/",
+			"kind": "dev",
+			"methods": {
+				"isValidSignature(address,bytes32,bytes,bytes)": {
+					"details": "Verifies that a hash has been signed by the given signer.",
+					"params": {
+						"_data": "Full EIP-712 data structure that was hashed and signed",
+						"_hash": "Hash of the EIP-712 encoded data",
+						"_sig": "Proof that the hash has been signed by signer.      For non wallet signatures, _sig is expected to be an array tightly encoded as      (bytes32 r, bytes32 s, uint8 v, uint256 nonce, SignatureType sigType)",
+						"_signerAddress": "Address that should have signed the given hash."
+					},
+					"returns": {
+						"isValid": "True if the address recovered from the provided signature matches the input signer address."
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Volumes/DATA/DATA/Projects/NFT-Neftipedia/NFT-1155/remix/Neftipedia.all.sol": "SignatureValidator"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Volumes/DATA/DATA/Projects/NFT-Neftipedia/NFT-1155/remix/Neftipedia.all.sol": {
+			"keccak256": "0xc541cd55e9b62b138f1ede1d86b81ceb0d226f5529b019e4976d47349ede0120",
+			"license": "Apache-2.0",
+			"urls": [
+				"bzz-raw://aebb735fe52a5f210f3bc3c0179fdf6461d4e9d919ecc9f7ca9ebc9104f32d2c",
+				"dweb:/ipfs/QmaEztc63aE6wJ7rdbZ7b1C14TDeLkHaEy9n7KBrxwiNk3"
+			]
+		}
+	},
+	"version": 1
+}

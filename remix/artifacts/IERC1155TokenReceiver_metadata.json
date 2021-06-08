@@ -1,0 +1,159 @@
+{
+	"compiler": {
+		"version": "0.7.4+commit.3f05b770"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_operator",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "_ids",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "_amounts",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_data",
+						"type": "bytes"
+					}
+				],
+				"name": "onERC1155BatchReceived",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_operator",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_data",
+						"type": "bytes"
+					}
+				],
+				"name": "onERC1155Received",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "ERC-1155 interface for accepting safe transfers.",
+			"kind": "dev",
+			"methods": {
+				"onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)": {
+					"details": "An ERC1155-compliant smart contract MUST call this function on the token recipient contract, at the end of a `safeBatchTransferFrom` after the balances have been updated This function MAY throw to revert and reject the transfer Return of other amount than the magic value WILL result in the transaction being reverted Note: The token contract address is always the message sender",
+					"params": {
+						"_amounts": "An array containing amounts of each token being transferred",
+						"_data": "Additional data with no specified format",
+						"_from": "The address which previously owned the token",
+						"_ids": "An array containing ids of each token being transferred",
+						"_operator": "The address which called the `safeBatchTransferFrom` function"
+					},
+					"returns": {
+						"_0": "`bytes4(keccak256(\"onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)\"))`"
+					}
+				},
+				"onERC1155Received(address,address,uint256,uint256,bytes)": {
+					"details": "An ERC1155-compliant smart contract MUST call this function on the token recipient contract, at the end of a `safeTransferFrom` after the balance has been updated This function MAY throw to revert and reject the transfer Return of other amount than the magic value MUST result in the transaction being reverted Note: The token contract address is always the message sender",
+					"params": {
+						"_amount": "The amount of tokens being transferred",
+						"_data": "Additional data with no specified format",
+						"_from": "The address which previously owned the token",
+						"_id": "The id of the token being transferred",
+						"_operator": "The address which called the `safeTransferFrom` function"
+					},
+					"returns": {
+						"_0": "`bytes4(keccak256(\"onERC1155Received(address,address,uint256,uint256,bytes)\"))`"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)": {
+					"notice": "Handle the receipt of multiple ERC1155 token types"
+				},
+				"onERC1155Received(address,address,uint256,uint256,bytes)": {
+					"notice": "Handle the receipt of a single ERC1155 token type"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Volumes/DATA/DATA/Projects/NFT-Neftipedia/NFT-1155/remix/Neftipedia.all.sol": "IERC1155TokenReceiver"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Volumes/DATA/DATA/Projects/NFT-Neftipedia/NFT-1155/remix/Neftipedia.all.sol": {
+			"keccak256": "0xc541cd55e9b62b138f1ede1d86b81ceb0d226f5529b019e4976d47349ede0120",
+			"license": "Apache-2.0",
+			"urls": [
+				"bzz-raw://aebb735fe52a5f210f3bc3c0179fdf6461d4e9d919ecc9f7ca9ebc9104f32d2c",
+				"dweb:/ipfs/QmaEztc63aE6wJ7rdbZ7b1C14TDeLkHaEy9n7KBrxwiNk3"
+			]
+		}
+	},
+	"version": 1
+}

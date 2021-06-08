@@ -1,0 +1,114 @@
+{
+	"compiler": {
+		"version": "0.7.4+commit.3f05b770"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "The Ownable contract has an owner address, and provides basic authorization control functions, this simplifies the implementation of \"user permissions\".",
+			"kind": "dev",
+			"methods": {
+				"constructor": {
+					"details": "The Ownable constructor sets the original `owner` of the contract to the sender account."
+				},
+				"transferOwnership(address)": {
+					"params": {
+						"_newOwner": "Address of the new owner"
+					}
+				}
+			},
+			"title": "Ownable",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"owner()": {
+					"notice": "Returns the address of the owner."
+				},
+				"transferOwnership(address)": {
+					"notice": "Transfers the ownership of the contract to new address"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Volumes/DATA/DATA/Projects/NFT-Neftipedia/NFT-1155/remix/Neftipedia.all.sol": "Ownable"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Volumes/DATA/DATA/Projects/NFT-Neftipedia/NFT-1155/remix/Neftipedia.all.sol": {
+			"keccak256": "0xc541cd55e9b62b138f1ede1d86b81ceb0d226f5529b019e4976d47349ede0120",
+			"license": "Apache-2.0",
+			"urls": [
+				"bzz-raw://aebb735fe52a5f210f3bc3c0179fdf6461d4e9d919ecc9f7ca9ebc9104f32d2c",
+				"dweb:/ipfs/QmaEztc63aE6wJ7rdbZ7b1C14TDeLkHaEy9n7KBrxwiNk3"
+			]
+		}
+	},
+	"version": 1
+}

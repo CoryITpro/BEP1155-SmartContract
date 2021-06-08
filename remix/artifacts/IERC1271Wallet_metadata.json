@@ -1,0 +1,122 @@
+{
+	"compiler": {
+		"version": "0.7.4+commit.3f05b770"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_hash",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_signature",
+						"type": "bytes"
+					}
+				],
+				"name": "isValidSignature",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "magicValue",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes",
+						"name": "_data",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_signature",
+						"type": "bytes"
+					}
+				],
+				"name": "isValidSignature",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "magicValue",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"isValidSignature(bytes,bytes)": {
+					"details": "MUST return the correct magic value if the signature provided is valid for the provided data   > The bytes4 magic value to return when signature is valid is 0x20c13b0b : bytes4(keccak256(\"isValidSignature(bytes,bytes)\")   > This function MAY modify Ethereum's state",
+					"params": {
+						"_data": "Arbitrary length data signed on the behalf of address(this)",
+						"_signature": "Signature byte array associated with _data"
+					},
+					"returns": {
+						"magicValue": "Magic value 0x20c13b0b if the signature is valid and 0x0 otherwise"
+					}
+				},
+				"isValidSignature(bytes32,bytes)": {
+					"details": "MUST return the correct magic value if the signature provided is valid for the provided hash   > The bytes4 magic value to return when signature is valid is 0x20c13b0b : bytes4(keccak256(\"isValidSignature(bytes,bytes)\")   > This function MAY modify Ethereum's state",
+					"params": {
+						"_hash": "keccak256 hash that was signed",
+						"_signature": "Signature byte array associated with _data"
+					},
+					"returns": {
+						"magicValue": "Magic value 0x20c13b0b if the signature is valid and 0x0 otherwise"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"isValidSignature(bytes,bytes)": {
+					"notice": "Verifies whether the provided signature is valid with respect to the provided data"
+				},
+				"isValidSignature(bytes32,bytes)": {
+					"notice": "Verifies whether the provided signature is valid with respect to the provided hash"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Volumes/DATA/DATA/Projects/NFT-Neftipedia/NFT-1155/remix/Neftipedia.all.sol": "IERC1271Wallet"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Volumes/DATA/DATA/Projects/NFT-Neftipedia/NFT-1155/remix/Neftipedia.all.sol": {
+			"keccak256": "0xc541cd55e9b62b138f1ede1d86b81ceb0d226f5529b019e4976d47349ede0120",
+			"license": "Apache-2.0",
+			"urls": [
+				"bzz-raw://aebb735fe52a5f210f3bc3c0179fdf6461d4e9d919ecc9f7ca9ebc9104f32d2c",
+				"dweb:/ipfs/QmaEztc63aE6wJ7rdbZ7b1C14TDeLkHaEy9n7KBrxwiNk3"
+			]
+		}
+	},
+	"version": 1
+}

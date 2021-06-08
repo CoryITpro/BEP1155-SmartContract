@@ -1,0 +1,46 @@
+{
+	"compiler": {
+		"version": "0.7.4+commit.3f05b770"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "Utility library of inline functions on addresses",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Volumes/DATA/DATA/Projects/NFT-Neftipedia/NFT-1155/remix/Neftipedia.all.sol": "Address"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Volumes/DATA/DATA/Projects/NFT-Neftipedia/NFT-1155/remix/Neftipedia.all.sol": {
+			"keccak256": "0xc541cd55e9b62b138f1ede1d86b81ceb0d226f5529b019e4976d47349ede0120",
+			"license": "Apache-2.0",
+			"urls": [
+				"bzz-raw://aebb735fe52a5f210f3bc3c0179fdf6461d4e9d919ecc9f7ca9ebc9104f32d2c",
+				"dweb:/ipfs/QmaEztc63aE6wJ7rdbZ7b1C14TDeLkHaEy9n7KBrxwiNk3"
+			]
+		}
+	},
+	"version": 1
+}
